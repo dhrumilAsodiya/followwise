@@ -1,0 +1,26 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# java
+target/
+build/
+.gradle/
+*.class
+*.jar
+*.log
+hs_err_pid*
+
+# node / next
+node_modules/
+.next/
+out/
+npm-debug.log*
+
+# editors and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
