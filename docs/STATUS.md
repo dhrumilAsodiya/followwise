@@ -1,7 +1,7 @@
 # STATUS (single status log)
 
 Update this file at the end of every task. It is the first thing every model and the founder reads.
-Last updated: 2026-10-23 by orchestrator
+Last updated: 2026-10-23 by Gemini 3.8 Flash
 
 ## Current
 | Item | Value |
@@ -9,8 +9,8 @@ Last updated: 2026-10-23 by orchestrator
 | Product version | **0.0.0** (pre-build, working toward v1) |
 | Docs baseline | README v1.2 (decision log D-01 to D-40) |
 | Current phase | **Phase 0: foundations (walking skeleton)** |
-| Current step | Step 2: skeleton built and verified; upgrading it to Spring Boot 4.1 before step 3 (D-38) |
-| Next task | PLAN-0002: upgrade backend to Spring Boot 4.1 + small cleanups. Then PLAN-0003: identity (step 3). |
+| Current step | Step 2b: upgraded backend to Spring Boot 4.1.1; ready for step 3 |
+| Next task | PLAN-0003: identity (Phase 0, step 3) |
 
 ## Version scheme
 - 0.x while building: 0.1.0 = Phase 0 done, 0.2.0 = Phase 1 done, 0.3.0 = Phase 2 done.
@@ -20,7 +20,7 @@ Last updated: 2026-10-23 by orchestrator
 ## Phase tracker
 | Phase | Target version | Status | Notes |
 |---|---|---|---|
-| 0. Foundations | 0.1.0 | IN PROGRESS | Step 2 built; upgrade to Boot 4.1 pending |
+| 0. Foundations | 0.1.0 | IN PROGRESS | Step 2b complete (Spring Boot 4.1.1) |
 | 1. Engine core | 0.2.0 | NOT STARTED | |
 | 2. The two templates | 0.3.0 | NOT STARTED | Rental Property Manager, Client Document Tracker |
 | 3. Private beta | 1.0.0 | NOT STARTED | Needs paid upgrades before charging (README 8.8) |
@@ -31,7 +31,7 @@ Last updated: 2026-10-23 by orchestrator
 ## Phase 0 steps
 - [ ] 1. Accounts and repository (founder manual tasks below, then commit the docs bootstrap)
 - [x] 2. Backend skeleton (built and verified on Spring Boot 3.3.5; to be upgraded to 4.1 in PLAN-0002)
-- [ ] 2b. Upgrade backend to Spring Boot 4.1 (PLAN-0002)
+- [x] 2b. Upgrade backend to Spring Boot 4.1 (PLAN-0002)
 - [ ] 3. Identity (users, workspaces, roles, auth, permission check with tenant-crossing tests)
 - [ ] 4. Frontend skeleton (Next.js, login pages, shell, /api forwarding)
 - [ ] 5. Deploy end to end (Render, Supabase, Vercel) and keep-alive repo; validate README 8.9
@@ -50,6 +50,7 @@ Tick what is done:
 ## Task log
 | Date | Task | Done by | Result |
 |---|---|---|---|
+| 2026-10-23 | PLAN-0002: upgraded backend to Spring Boot 4.1.1, fixed compose security | Gemini 3.8 Flash | Done |
 | 2026-10-23 | PLAN-0001 reviewed by orchestrator. Accepted with conditions: Spring Boot 3.3.5 is end-of-life (all 3.x are), so upgrade to 4.1 (D-38); added D-39 (UTC), D-40 (Postgres host port); AGENTS.md rules 15 and 16 added | Orchestrator | Done |
 | 2026-10-23 | PLAN-0001: backend skeleton created and verified | Gemini 3.8 Flash | Done |
 | 2026-10-22 | PLAN-0001 drafted by Claude (planner), reviewed by orchestrator; decided Maven and Docker for Render (D-36, D-37); fixed .env.example inline comments | Orchestrator | Done |

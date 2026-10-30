@@ -1,6 +1,6 @@
 # backend
 
-Spring Boot 3 / Java 21 REST API, scheduler, and engine blocks.
+Spring Boot 4.1 / Java 21 REST API, scheduler, and engine blocks.
 
 ## Prerequisites
 - Java 21
